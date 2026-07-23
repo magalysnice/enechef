@@ -1,0 +1,647 @@
+/* ===========================================
+   ENECHEF CALI
+   Diseño Premium
+=========================================== */
+
+:root{
+
+    --primary:#6B3E26;
+    --secondary:#C79A63;
+    --accent:#EFBF6B;
+    --light:#FFFDF9;
+    --white:#ffffff;
+    --dark:#222;
+    --gray:#666;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:var(--dark);
+    overflow-x:hidden;
+
+}
+
+img{
+
+    width:100%;
+    display:block;
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+/***************************
+NAVBAR
+****************************/
+
+header{
+
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+
+    z-index:999;
+
+    transition:.4s;
+
+}
+
+.navbar{
+
+    max-width:1300px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 40px;
+
+}
+
+header.scrolled{
+
+    background:white;
+
+    box-shadow:0 8px 30px rgba(0,0,0,.10);
+
+}
+
+.logo img{
+
+    width:170px;
+
+}
+
+.navbar ul{
+
+    display:flex;
+
+    gap:30px;
+
+}
+
+.navbar ul li a{
+
+    color:white;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+header.scrolled a{
+
+    color:#222;
+
+}
+
+.navbar ul li a:hover{
+
+    color:var(--accent);
+
+}
+
+.btn{
+
+    background:linear-gradient(135deg,var(--secondary),var(--primary));
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/***************************
+HERO
+****************************/
+
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+}
+
+.hero video{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+.hero-content h1{
+
+    font-size:65px;
+
+    font-weight:700;
+
+    line-height:1.1;
+
+}
+
+.hero-content span{
+
+    color:#FFD56B;
+
+}
+
+.hero-content p{
+
+    margin-top:25px;
+
+    font-size:20px;
+
+    opacity:.9;
+
+}
+
+.hero-buttons{
+
+    margin-top:45px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.hero-buttons a{
+
+    background:white;
+
+    color:#222;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.hero-buttons a:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.hero-buttons a:first-child{
+
+    background:#25D366;
+
+    color:white;
+
+}
+
+/***************************
+SECCIONES
+****************************/
+
+section{
+
+    padding:110px 8%;
+
+}
+
+section h2{
+
+    font-size:42px;
+
+    margin-bottom:50px;
+
+    text-align:center;
+
+    color:var(--primary);
+
+}
+
+/***************************
+ESTADÍSTICAS
+****************************/
+
+#estadisticas{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    background:#FFF7EE;
+
+}
+
+#estadisticas div{
+
+    background:white;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.06);
+
+}
+
+#estadisticas h2{
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+}
+
+/***************************
+CARDS
+****************************/
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:35px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:var(--secondary);
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:20px;
+
+}
+
+/***************************
+CURSOS
+****************************/
+
+#cursos{
+
+    background:#fafafa;
+
+}
+
+.curso{
+
+    background:white;
+
+    margin-bottom:30px;
+
+    border-left:8px solid var(--secondary);
+
+    padding:30px;
+
+    border-radius:16px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.06);
+
+}
+
+.curso:hover{
+
+    transform:translateX(8px);
+
+}
+
+/***************************
+GALERÍA
+****************************/
+
+.gallery{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:22px;
+
+}
+
+.gallery img{
+
+    height:330px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+}
+
+.gallery img:hover{
+
+    transform:scale(1.05);
+
+}
+
+/***************************
+CONTACTO
+****************************/
+
+#contacto{
+
+    background:#FFF8EF;
+
+    text-align:center;
+
+}
+
+#contacto p{
+
+    margin:12px 0;
+
+    font-size:18px;
+
+}
+
+#contacto a{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#25D366;
+
+    color:white;
+
+    padding:18px 35px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+}
+
+/***************************
+FOOTER
+****************************/
+
+footer{
+
+    background:#23160D;
+
+    color:white;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+footer a{
+
+    color:white;
+
+    margin:0 12px;
+
+}
+
+footer a:hover{
+
+    color:#FFD56B;
+
+}
+
+/***************************
+BOTÓN WHATSAPP
+****************************/
+
+.whatsapp{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:65px;
+
+    height:65px;
+
+    background:#25D366;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:32px;
+
+    z-index:9999;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+    transition:.3s;
+
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.08);
+
+}
+
+/***************************
+RESPONSIVE
+****************************/
+
+@media(max-width:992px){
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.navbar ul{
+
+display:none;
+
+}
+
+#estadisticas{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+height:85vh;
+
+}
+
+.hero-content h1{
+
+font-size:34px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.hero-buttons a{
+
+width:100%;
+
+text-align:center;
+
+}
+
+section{
+
+padding:80px 20px;
+
+}
+
+#estadisticas{
+
+grid-template-columns:1fr;
+
+}
+
+.gallery{
+
+grid-template-columns:1fr;
+
+}
+
+}
